@@ -1,0 +1,48 @@
+.sdbr{
+    background-color: rgb(0, 94, 149) ;
+    height: 93vh;
+    width: 70px;
+    position: fixed;
+    margin-top: 10px;
+    top: 0;
+    align-items: center;
+    color: white;
+}
+
+.baricon{
+    justify-content: space-between;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    height: 93vh;
+    bottom: 0;
+    width: 70px;
+    margin-top: 10px;
+    transition: transform 0.5s ease;
+  }
+  
+  .sidebar--left {
+    left: -71px;
+    transform: translateX(100%);
+  }
+  
+  .sidebar--right {
+    right: 0;
+    transform: translateX(0);
+  }
+  
+  .sidebar--hidden {
+    display: none;
+  }
+  
+  .sidebar-content {
+    padding: 20px;
+  }
+  
+  .sidebar-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }

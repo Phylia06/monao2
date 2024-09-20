@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOUKOU</title>
+</head>
+<body>
+    <h1>
+        HERE WE GO AGAIN
+    </h1>
+    <table border="1">
+        {% for x in man %}
+        <tr>
+            <td> <a href="update/{{ x.id}}">{{ x.id}}</a></td>
+            <td>{{ x.Firstname}}</td>
+            <td>{{ x.Lastname}}</td>
+            <td>{{ x.email}}</td>
+            <td>{{ x.number}}</td>
+            <td> 
+               <a href="delete/{{ x.id }}">DELETE</a> 
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p>
+        <a href="ad/"> Add a Manager</a>
+    </p>
+</body>
+</html>

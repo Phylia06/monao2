@@ -1,0 +1,93 @@
+.con{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00b4d8;
+}
+
+@keyframes wave {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+form {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+.man{
+    animation: wave 8s ease-in-out infinite;
+    background-size: 400% 400%;
+    height: 350px;
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: transparent;
+}
+
+.logi{
+    font-weight: bold;
+    font-size:xx-large;
+    text-align: center;
+    color: white;
+    height: 70px;
+}
+
+.rem-forg{
+    color: rgba(255, 255, 255, 0.479);
+}
+
+.iput{
+    width: 90%;
+    height: 40px;
+    padding-left: 50px;
+    padding-right: 3px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    font-size: 18px;
+    border-radius: 5px; /* rounded-md */
+    background-color:white;/* bg-white bg-opacity-50 */
+    transition: all 0.3s ease; 
+}
+
+.iput:focus {
+    background-color: rgba(197, 236, 253, 0.711); /* focus:bg-opacity-70 */
+    outline: none; /* focus:outline-none */
+    box-shadow: 0 0 0 2px rgb(191, 224, 247); 
+}
+
+.ico {
+    position: absolute;
+    left: -150px;
+    display: flex;
+    font-weight: bold;
+    top: 28%;
+    transform: translateY(-50%);
+    background-color:none;
+    color:rgb(4, 94, 111) ;
+}
+
+::placeholder {
+    font-size: 14px;
+   
+    color: rgb(4, 94, 111);
+  
+  }
+
+.con button{
+    width: 90%;
+    height: 40px;
+    background-color: #00b4d8;
+    color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}

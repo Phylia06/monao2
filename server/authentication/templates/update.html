@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODIFY</title>
+</head>
+<body>
+    <h1>MOODIFICATION</h1>
+    
+    <form action="updaterecord/{{ manage.id }}" method="post">
+    {% csrf_token %}
+    First Name: <br>
+    <input type="text" name="first" value="{{ manage.Firstname }}">
+    <br><br>
+    Last Name: <br>
+    <input type="text" name="last" value="{{ manage.Lastname }}">
+    <br><br>
+    Number: <br>
+    <input type="number" name="num" value="{{ manage.number }}">
+    <br><br>
+    Email: <br>
+    <input type="email" name="email" value="{{ manage.email }}">
+    <br><br>
+    <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

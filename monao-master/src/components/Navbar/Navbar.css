@@ -1,0 +1,24 @@
+.part2 {
+    background-color: rgb(0, 94, 149) ;
+    display:flex;
+    align-items: center;
+    height: 8vh;
+    margin-top: -200px;
+    color: white;
+}
+
+.monao{
+    font-weight: bold;
+    left: 0;   
+}
+
+.profpic {
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(58, 84, 110);
+    border-radius: 50%;
+    height:40px;
+    width: 80px;
+    margin-left: -30px;
+}
